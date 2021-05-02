@@ -1,7 +1,7 @@
 <?php
 
 //database_connection.php
-$connect = new PDO("mysql:host=localhost;dbname=sikared2_chat", "sikared2_chat", "Pp72320@#");
+$connect = new PDO("mysql:host=localhost;dbname=sikared2_chat", "sikared2_chat", "password");
 
 date_default_timezone_set('Asia/Kolkata');
 
