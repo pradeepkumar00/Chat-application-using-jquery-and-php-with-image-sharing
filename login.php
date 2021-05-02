@@ -60,20 +60,29 @@ if(isset($_POST["login"]))
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   
     <style>
         .name{
             width: 300px;
+        }
+        .name input{
+            width: 298px;
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+        }
+        .btn{
+            height: 30px;
+            width: 80px;
+            background: #fff;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            
         }
     </style>
 </head>
@@ -87,11 +96,11 @@ if(isset($_POST["login"]))
 
 
         <!-- bradcam_area_start -->
-        <div class="bradcam_area breadcam_bg overlay2">
+       <div align="center" style="width: 100%; background: #0ffccc;font-size: 50px;">
             <h3>Login</h3>
         </div>
         <!-- bradcam_area_end -->
-<div class="popup_box" style="width:100%" align="center">
+<div class="popup_box" style="width:100%; background: #0ffccc; " align="center">
             <div class="popup_inner"">
                  <?php
 				  if($msg==1){
@@ -117,8 +126,8 @@ if(isset($_POST["login"]))
                             <input name="password" id="password" type="password" placeholder="Password">
                         </div>
                         
-						<div class="btn" style="margin: auto">
-                                <button type="submit" name="login" class="boxed_btn_orange">Sign in</button>
+						<div class="btn1" style="margin: auto">
+                                <button type="submit" name="login" class="btn">Sign in</button>
                             </div></div>
                     </div>
                 </form>
