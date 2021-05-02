@@ -1,0 +1,175 @@
+s-wrap {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header1 {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #ffcc99;
+}
+.p{
+	margin: 15px auto;
+	width: 90%;
+	color: #000;
+	font-weight: 50px;
+	font-size: 20px;
+	font-family: poppins;
+	
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn{
+  float: left;
+  width: 75%;
+}
+@media screen and (max-width: 809px){
+	.navbar2 {	
+	  display: none;
+	}
+}
+@media screen and (min-width: 810px){
+	.navbar2 {	
+	  background-color: #ffc;
+	  position: fixed; /* Set the navbar to fixed position */
+	  bottom: 400px; /* Position the navbar at the top of the page */
+	  width: 280px;
+	  height: 380px;/* Full width */
+	  right: 10px;
+	  text-align: center;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px;
+	}
+}
+@media screen and (min-width: 1000px){
+	.navbar2 {	
+	  background-color: #ffc;
+	  position: fixed; /* Set the navbar to fixed position */
+	  bottom: 400px; /* Position the navbar at the top of the page */
+	  width: 280px;
+	  height: 400px;/* Full width */
+	  right: 50px;
+	  text-align: center;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px;
+	}
+}
+@media screen and (min-width: 1200px){
+	.navbar2 {	
+	  background-color: #ffc;
+	  position: fixed; /* Set the navbar to fixed position */
+	  bottom: 200px; /* Position the navbar at the top of the page */
+	  width: 300px;
+	  height: 400px;/* Full width */
+	  right: 100px;
+	  text-align: center;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px;
+	}
+	.active1 a:active {
+		background: #000;
+	}
+}
+@media screen and (min-width: 805px){
+	.navbar1 {	
+	  background-color: #ffc;
+	  position: fixed; /* Set the navbar to fixed position */
+	  bottom: 100px; /* Position the navbar at the top of the page */
+	  width: 90px;
+	  height: 320px;/* Full width */
+	  left: 50px;
+	  text-align: center;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px;
+	}
+	.link-list{
+		margin-top: 0px;
+		margin: 20px;
+		height: 50px;
+		padding-top: 5px;
+		background: #fff;
+		border-radius: 10px;
+		width: 50px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		text-align: center;
+	}
+	.iconcss{
+		font-size: 40px;
+	}
+	
+}
+
+@media screen and (max-width: 804px){
+	.navbar1 {	
+	  background-color: #ffcc99;
+	  position: fixed; /* Set the navbar to fixed position */
+	  bottom: 20px; /* Position the navbar at the top of the page */
+	  width: 50px;
+	  height: 150px;/* Full width */
+	  right: 0px;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  text-align: center;
+	}
+	.link-list{
+		margin: 10px;
+		height: 25px;
+		padding-top: 2.5px;
+		background: #fff;
+		border-radius: 5px;
+		width: 25px;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		text-align: center;
+	}
+	.iconcss{
+		font-size: 20px;
+	}
+}
+/* Fake image */
+.fakeimg{
+  background-color: #aaa;
+  width: 80%;
+  padding: 10px;
+  margin: 0px auto;
+  
+}
+.fakeimg1{
+  background-color: #aaa;
+  width: 100%;
+  padding: 0px;
+  
+}
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin: 0px auto;
+  width: 70%
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
